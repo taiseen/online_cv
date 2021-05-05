@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap");
 
 :root {
-    --yellow  : #F9CA24;
-    --leftSide: #003147;
-    --icon    : #03A9F4;
-    --white   : #ffffff;
+    --yellow      : #F9CA24;
+    --leftSide    : #003147;
+    --icon        : #03A9F4;
+    --white       : #ffffff;
+    --year_context: #848C99;
 }
 
 * {
@@ -55,7 +56,8 @@ main {
 }
 
 .right_side {
-    background: var(--white);;
+    background: var(--white);
+    ;
 }
 
 /* ############################ */
@@ -173,15 +175,99 @@ main {
     position     : relative;
     width        : 100%;
     height       : 6px;
-    background   : #081921;
     display      : block;
     border-radius: 10px;
+    background   : #081921;
 }
 
 .language_info .percent div {
-    position  : absolute;
-    top       : 0;
-    left      : 0;
-    height    : 100%;
-    background: var(--icon);
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    height       : 100%;
+    border-radius: 10px;
+    background   : var(--icon);
 }
+
+/* ############################## */
+/* About Area      |      Styling */
+/* ############################## */
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.about .title {
+    color         : var(--leftSide);
+    letter-spacing: 1.2px;
+    margin-bottom : 1rem;
+}
+
+.about p {
+    color: #333;
+}
+
+.about .box {
+    display       : flex;
+    flex-direction: row;
+    margin        : 1.2rem 0;
+}
+
+.about .box .years_work {
+    min-width: 150px;
+}
+
+.about .box .years_work h5 {
+    color: var(--year_context);
+}
+
+.about .box .text h4 {
+    color    : #2A7DA2;
+    font-size: 1.1rem;
+}
+
+
+/* ############################## */
+/* Skills Area      |     Styling */
+/* ############################## */
+
+.skills .box {
+    position             : relative;
+    width                : 100%;
+    display              : grid;
+    grid-template-columns: 150px 1fr;
+    justify-content      : center;
+    align-items          : center;
+}
+
+.skills .box .percent {
+    position     : relative;
+    width        : 100%;
+    height       : .5rem;
+    background   : #E0E0E0;
+    border-radius: .5rem;
+}
+
+.skills .box .percent div {
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    width        : 55%;
+    height       : 100%;
+    border-radius: .5rem;
+    background   : var(--icon)
+}
+
+
+/* ############################## */
+/* Skills Area      |     Styling */
+/* ############################## */
+
+.interest ul {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
