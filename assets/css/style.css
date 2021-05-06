@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap");
 
 :root {
+    --leftSide : #313131;
+    --rightSide: #3b3b3b;
+    --icon     : #F9CA24;
+    --white    : #ffffff;
+}
+
+/* :root {
     --yellow      : #F9CA24;
     --leftSide    : #003147;
     --icon        : #03A9F4;
     --white       : #ffffff;
     --year_context: #848C99;
-}
+} */
 
 * {
     margin         : 0;
@@ -38,7 +45,6 @@ main {
     max-width            : 1000px;
     min-height           : 1000px;
     margin               : 50px;
-    background           : var(--white);
     box-shadow           : 0 35px 55px rgba(0, 0, 0, .5);
     display              : grid;
     grid-template-columns: 1fr 2fr;
@@ -56,7 +62,7 @@ main {
 }
 
 .right_side {
-    background: var(--white);
+    background: var(--rightSide);
     ;
 }
 
@@ -177,7 +183,7 @@ main {
     height       : 6px;
     display      : block;
     border-radius: 10px;
-    background   : #081921;
+    background   : var(--white);
 }
 
 .language_info .percent div {
@@ -201,13 +207,13 @@ main {
 }
 
 .about .title {
-    color         : var(--leftSide);
+    color         : var(--icon);
     letter-spacing: 1.2px;
     margin-bottom : 1rem;
 }
 
 .about p {
-    color: #333;
+    color: var(--white);
 }
 
 .about .box {
@@ -220,12 +226,16 @@ main {
     min-width: 150px;
 }
 
+.about .box .years_work h5:first-child {
+    color: var(--icon);
+}
+
 .about .box .years_work h5 {
-    color: var(--year_context);
+    color: var(--white);
 }
 
 .about .box .text h4 {
-    color    : #2A7DA2;
+    color    : var(--icon);
     font-size: 1.1rem;
 }
 
@@ -243,11 +253,15 @@ main {
     align-items          : center;
 }
 
+.skills .box {
+    color: var(--white)
+}
+
 .skills .box .percent {
     position     : relative;
     width        : 100%;
     height       : .5rem;
-    background   : #E0E0E0;
+    background   : var(--white);
     border-radius: .5rem;
 }
 
@@ -261,6 +275,14 @@ main {
     background   : var(--icon)
 }
 
+.language_info .percent div span,
+.skills .box .percent div span {
+    position : absolute;
+    top      : -20px;
+    right    : 10px;
+    font-size: 16px;
+    color    : var(--white);
+}
 
 /* ############################## */
 /* Skills Area      |     Styling */
@@ -271,3 +293,53 @@ main {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.interest ul li {
+    color      : var(--white);
+    margin     : 1rem 0;
+    font-weight: 900;
+
+}
+
+.interest ul li .fa {
+    color    : var(--icon);
+    font-size: 1.5rem;
+}
+
+.interest i {
+    padding-right: 5px;
+}
+
+/* Responsive  */
+@media (max-width: 1000px) {
+
+    main {
+        margin               : 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .years_work {
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items        : center;
+
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
