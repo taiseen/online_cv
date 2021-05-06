@@ -1,19 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap");
 
 :root {
-    --leftSide : #313131;
-    --rightSide: #3b3b3b;
+    /* --leftSide : #313131;
+    --rightSide: #3b3b3b; */
+    --leftSide : #2D333B;
+    --rightSide: #22272E;
     --icon     : #F9CA24;
     --white    : #ffffff;
 }
-
-/* :root {
-    --yellow      : #F9CA24;
-    --leftSide    : #003147;
-    --icon        : #03A9F4;
-    --white       : #ffffff;
-    --year_context: #848C99;
-} */
 
 * {
     margin         : 0;
@@ -276,11 +270,11 @@ main {
 }
 
 .language_info .percent div span,
-.skills .box .percent div span {
+.skills .percent div span {
     position : absolute;
     top      : -20px;
     right    : 10px;
-    font-size: 16px;
+    font-size: 1rem;
     color    : var(--white);
 }
 
@@ -327,10 +321,12 @@ main {
 
     .about .box {
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .about .box .years_work {
         margin-bottom: 5px;
+        font-size    : 1.3rem;
     }
 
     .interest ul {
@@ -341,5 +337,10 @@ main {
 
     .skills .box {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .language_info .percent div span,
+    .skills .percent div span {
+        font-size: .8rem;
     }
 }
