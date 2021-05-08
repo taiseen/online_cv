@@ -21,8 +21,8 @@
 }
 
 *::selection {
-    background: lightgreen;
-    color     : red;
+    background: lime;
+    color     : black;
 }
 
 body {
@@ -166,8 +166,8 @@ main {
     color: var(--white);
 }
 
-.language_info li:nth-child(2) {
-    margin: 1rem 0;
+.language_info li {
+    margin: .8rem 0;
 }
 
 .language_info .percent {
@@ -230,6 +230,38 @@ main {
 .about .box .text h4 {
     color    : var(--icon);
     font-size: 1.1rem;
+}
+
+.about .box .text span {
+    color    : var(--icon);
+    
+    
+}
+
+.about .box .text ol {
+    color     : var(--icon);
+    margin-top: .8rem;
+}
+
+.about .box .text ol li {
+    color     : var(--icon);
+    margin-top: .8rem;
+}
+
+.about .box .text ol li a {
+    color       : var(--icon);
+    margin-right: .5rem;
+}
+
+.about .box .text ol li i {
+    color: tomato;
+}
+
+.about .box .text ol li:hover a {
+    color: tomato;
+}
+.about .box .text ol li:hover i {
+    color: var(--icon);
 }
 
 
@@ -320,7 +352,7 @@ main {
 
     .about .box {
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom : 2rem;
     }
 
     .about .box .years_work {
