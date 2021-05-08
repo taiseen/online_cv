@@ -233,9 +233,8 @@ main {
 }
 
 .about .box .text span {
-    color    : var(--icon);
-    
-    
+    font-weight: 900;
+    color : rgba(146, 139, 139, 0.8)
 }
 
 .about .box .text ol {
@@ -244,8 +243,9 @@ main {
 }
 
 .about .box .text ol li {
-    color     : var(--icon);
-    margin-top: .8rem;
+    color  : var(--icon);
+    margin : .5rem 1.5rem 0 0;
+    display: inline-block;
 }
 
 .about .box .text ol li a {
@@ -260,6 +260,7 @@ main {
 .about .box .text ol li:hover a {
     color: tomato;
 }
+
 .about .box .text ol li:hover i {
     color: var(--icon);
 }
