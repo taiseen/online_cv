@@ -1,0 +1,39 @@
+/* ############################ */
+/* Profile Photo Area | Styling */
+/* ############################ */
+
+.profile_photo {
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding-bottom: 1.2rem;
+    border-bottom : 1px solid rgba(255, 255, 255, 0.2);
+
+    .imgBox {
+        position     : relative;
+        width        : 200px;
+        height       : 200px;
+        border-radius: 50%;
+        overflow     : hidden;
+
+        img {
+            width     : 100%;
+            object-fit: cover;
+        }
+    }
+
+    h2 {
+        color      : var(--white);
+        font-size  : 1.5rem;
+        margin-top : 1rem;
+        text-align : center;
+        font-weight: 600;
+        line-height: 1.6rem;
+
+        span {
+            font-size  : 1rem;
+            font-weight: 300;
+        }
+    }
+}

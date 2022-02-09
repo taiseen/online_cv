@@ -1,0 +1,47 @@
+/*  Responsiveness  */
+
+@media (max-width: 1000px) {
+
+    main {
+        margin               : 10px;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .about {
+
+        .box {
+            flex-direction: column;
+            margin-bottom : 2rem;
+
+            .working_years {
+                margin-bottom: 5px;
+                font-size    : 1.3rem;
+            }
+        }
+    }
+
+
+    .interest ul {
+        justify-items        : center;
+    }
+
+    .skills-container {
+
+        .box {
+            grid-template-columns: repeat(1, 1fr) !important;
+            font-size            : 14px;
+
+            .percent .progressColor span {
+                font-size: 12px;
+            }
+        }
+    }
+}

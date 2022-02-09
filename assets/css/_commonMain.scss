@@ -1,0 +1,53 @@
+body {
+    background     : var(--bodyBG);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    min-height     : 100vh;
+
+    main {
+        position             : relative;
+        width                : 100%;
+        max-width            : 1000px;
+        min-height           : 1000px;
+        margin               : 50px;
+        box-shadow           : 0 35px 55px rgba(0, 0, 0, .5);
+        display              : grid;
+        grid-template-columns: 1fr 2fr;
+
+        .left_side,
+        .right_side {
+            position: relative;
+            padding : 2.2rem;
+        }
+
+        .left_side {
+            background: var(--leftSide);
+
+            .contact_info,
+            .education_info,
+            .language_info {
+                padding-top: 30px;
+
+                h3 {
+                    color         : var(--white);
+                    letter-spacing: 2px;
+                    margin-bottom : 20px;
+                    text-align    : center;
+                }
+            }
+        }
+
+        .right_side {
+            background: var(--rightSide);
+
+            .about {
+                margin-bottom: 2.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

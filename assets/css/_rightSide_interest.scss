@@ -1,0 +1,22 @@
+/* ############################## */
+/* Skills Area      |     Styling */
+/* ############################## */
+.interest {
+
+    ul {
+        display              : grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        li {
+            color      : var(--white);
+            margin     : .8rem 0;
+            font-weight: 900;
+
+            i {
+                padding-right: 5px;
+                color        : var(--mainTheme);
+                font-size    : 1.5rem;
+            }
+        }
+    }
+}

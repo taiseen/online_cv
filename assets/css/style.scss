@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap");
+
+:root {
+    /* --leftSide : #313131;
+    --rightSide: #3b3b3b; */
+    --leftSide : #2D333B;
+    --rightSide: #22272E;
+    --mainTheme: #F9CA24;
+    --white    : #ffffff;
+    --hover    : tomato;
+    --bodyBG   : lightblue;
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    border         : none;
+    outline        : none;
+    list-style     : none;
+    text-decoration: none;
+    font-family    : 'Nunito', sans-serif;
+}
+
+*::selection {
+    background: #36cc36;
+    color     : #141414;
+}
+
+
+@import 'commonMain';
+@import 'leftSide_profilePhoto';
+@import 'leftSide_contact';
+@import 'leftSide_education';
+@import 'leftSide_language';
+
+@import 'rightSide_aboutExperience';
+@import 'rightSide_skill';
+@import 'rightSide_interest';
+
+@import 'responsive';

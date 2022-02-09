@@ -1,0 +1,25 @@
+/* ############################ */
+/* Contact Info Area |  Styling */
+/* ############################ */
+
+.contact_info {
+    ul li {
+        margin: 10px 0;
+        cursor: pointer;
+
+        &:hover .icon {
+            color: var(--hover);
+        }
+
+        .icon {
+            display  : inline-block;
+            width    : 25px;
+            font-size: 18px;
+            color    : var(--mainTheme);
+        }
+
+        .text {
+            color: var(--white);
+        }
+    }
+}

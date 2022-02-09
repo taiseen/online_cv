@@ -1,0 +1,42 @@
+/* ############################## */
+/* Skills Area      |     Styling */
+/* ############################## */
+.skills-container {
+
+    .box {
+        position             : relative;
+        width                : 100%;
+        margin               : 1.2rem 0;
+        display              : grid;
+        grid-template-columns: 150px 1fr;
+        justify-content      : center;
+        align-items          : center;
+        color                : var(--white);
+
+        .percent {
+            position     : relative;
+            width        : 100%;
+            height       : .5rem;
+            background   : var(--white);
+            border-radius: .5rem;
+
+            .progressColor {
+                position     : absolute;
+                top          : 0;
+                left         : 0;
+                width        : 55%;
+                height       : 100%;
+                border-radius: .5rem;
+                background   : var(--mainTheme);
+
+                span {
+                    position : absolute;
+                    top      : -20px;
+                    right    : 10px;
+                    font-size: 1rem;
+                    color    : var(--white);
+                }
+            }
+        }
+    }
+}

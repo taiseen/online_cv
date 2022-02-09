@@ -1,0 +1,79 @@
+/* ############################## */
+/* About Area      |      Styling */
+/* ############################## */
+.about {
+
+    .title {
+        color         : var(--mainTheme);
+        letter-spacing: 1.2px;
+        margin-bottom : 1rem;
+    }
+
+    p {
+        color: var(--white);
+    }
+
+
+    // Experience Styling... 
+    .box {
+        display: flex;
+        margin : 1.2rem 0;
+
+        .working_years {
+            margin-top: 5px;
+            min-width : 150px;
+
+            h5 {
+                color: var(--mainTheme);
+            }
+
+            a {
+                color    : var(--white);
+                font-size: 14px;
+
+                &:hover {
+                    color: var(--hover);
+                }
+            }
+        }
+
+        .text {
+
+            h4 {
+                color    : var(--mainTheme);
+                font-size: 1.1rem;
+            }
+
+            span {
+                font-weight: 900;
+                color      : #aaa;
+            }
+
+            ol {
+                margin-top: .8rem;
+
+                li {
+                    margin : .5rem 1.5rem 0 0;
+                    display: inline-block;
+
+                    &:hover a {
+                        color: var(--hover);
+                    }
+
+                    // &:hover i {
+                    //     color: var(--mainTheme);
+                    // }
+
+                    a {
+                        color       : var(--mainTheme);
+                        margin-right: .5rem;
+                    }
+
+                    i {
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+    }
+}

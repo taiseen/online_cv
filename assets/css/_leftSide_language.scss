@@ -1,0 +1,36 @@
+/* ############################## */
+/* Language Info Area |   Styling */
+/* ############################## */
+.language_info {
+
+    li {
+        margin: .8rem 0;
+        color : var(--white);
+
+        .percent {
+            position     : relative;
+            width        : 100%;
+            height       : 6px;
+            display      : block;
+            border-radius: 10px;
+            background   : var(--white);
+
+            .progressColor {
+                position     : absolute;
+                top          : 0;
+                left         : 0;
+                height       : 100%;
+                border-radius: 10px;
+                background   : var(--mainTheme);
+
+                span {
+                    position : absolute;
+                    top      : -20px;
+                    right    : 10px;
+                    font-size: 1rem;
+                    color    : var(--white);
+                }
+            }
+        }
+    }
+}
