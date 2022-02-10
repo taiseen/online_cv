@@ -3,8 +3,11 @@
 @media (max-width: 1000px) {
 
     main {
-        margin               : 10px;
         grid-template-columns: repeat(1, 1fr) !important;
+
+        .right_side #themeBtn {
+            top: -78rem !important;
+        }
     }
 
     .interest ul {
@@ -14,6 +17,16 @@
 }
 
 @media (max-width: 650px) {
+
+    main {
+        margin: 10px !important;
+
+        .left_side,
+        .right_side {
+            padding: 2rem 1.2rem !important;
+        }
+    }
+
 
     .about {
 
@@ -30,7 +43,7 @@
 
 
     .interest ul {
-        justify-items        : center;
+        justify-items: center;
     }
 
     .skills-container {

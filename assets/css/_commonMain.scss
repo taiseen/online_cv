@@ -4,6 +4,16 @@ body {
     justify-content: center;
     align-items    : center;
     min-height     : 100vh;
+    transition     : .5s linear;
+
+    &.userClick {
+        --leftSide : #2D333B;
+        --rightSide: #22272E;
+        --mainTheme: #F9CA24;
+        --white    : #ffffff;
+        --hover    : tomato;
+        --bodyBG   : lightblue;
+    }
 
     main {
         position             : relative;
@@ -40,6 +50,30 @@ body {
 
         .right_side {
             background: var(--rightSide);
+
+            #themeBtn {
+                position              : absolute;
+                top                   : 1rem;
+                right                 : 1rem;
+                // height             : 2.5rem;
+                // width              : 2.5rem;
+                // line-height        : 2.5rem;
+                // text-align         : center;
+                // background-color   : var(--leftSide);
+                color                 : var(--white);
+                font-size             : 1.5rem;
+                transition            : .2s linear;
+                cursor                : pointer;
+
+                &:hover {
+                    color: var(--hover);
+                }
+
+                &.fa-sun {
+                    transform: rotate(180deg);
+                }
+
+            }
 
             .about {
                 margin-bottom: 2.5rem;
